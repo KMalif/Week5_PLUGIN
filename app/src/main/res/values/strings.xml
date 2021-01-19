@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Widget</string>
+
+    <string-array name="daftar_squad">
+        <item>Squad Mobile</item>
+        <item>Squad Website</item>
+        <item>Squad Network</item>
+        <item>Squad UI/UX</item>
+
+    </string-array>
+</resources>

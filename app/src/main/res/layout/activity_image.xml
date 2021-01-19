@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".image">
+
+   <de.hdodenhof.circleimageview.CircleImageView
+       android:id="@+id/img_circle"
+       android:layout_width="200dp"
+       android:layout_height="200dp"
+       android:src="@drawable/plugin"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="100dp"/>
+
+    <Button
+        android:id="@+id/btn_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toast"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/img_circle"/>
+
+    <Spinner
+        android:id="@+id/Spinner_squad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/daftar_squad"
+        android:layout_below="@+id/btn_toast"/>
+
+    <RatingBar
+        android:id="@+id/ratting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="3"
+        android:stepSize="0.5"
+        android:layout_below="@+id/Spinner_squad"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
